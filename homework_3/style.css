@@ -4,7 +4,6 @@ th {
   width: 70px;
 }
 td {
-  border-collapse: separate;
   border-radius: 7px;
   border: 2px double #203864;
   font-size: 18px;
@@ -16,12 +15,15 @@ td {
 .bac {
   background-color: bisque;
 }
-
 .bor {
   border-color: #cf6571;
   color: #b71326;
   border-collapse: separate;
   border: 3px double #ff1493;
+}
+.falysh {
+  height: 50px;
+  border: none;
 }
 .rad {
   background: #fb9dd0;
@@ -29,39 +31,30 @@ td {
 .radd {
   background: #edc7db;
 }
-
 .sadd {
   background: #8c5ee9;
 }
-
 .grey {
   background: #8b8585;
 }
-
 .grin {
   background: #30be30;
 }
-
 .orange {
   background: #f5a004;
 }
-
 .gold {
   background: #fad505;
 }
-
 .dodg {
   background: #1e90ff;
 }
-
 .syan {
   background: #005bf7;
 }
-
 .oliv {
   background: #20b2aa;
 }
-
 .deep {
   background: #008cff;
 }

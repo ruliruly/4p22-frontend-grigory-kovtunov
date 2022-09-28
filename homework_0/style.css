@@ -1,0 +1,27 @@
+.head_hedern,
+h1 {
+  color: brown;
+}
+.popup {
+  position: fixed;
+  width: 90%;
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 29px;
+  top: 0;
+  left: 0;
+}
+.popup_boby {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup_content {
+}
+.popup_close {
+}
+.popup_title {
+}
+.popup_text {
+}
