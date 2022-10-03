@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Comial 4448";
+  src: url("fonts/Comial4448.woff2") format("woff2"),
+    url("fonts/Comial4448.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NegaraSerif-HairlineItalic";
+  src: url("fonts/NegaraSerif-HairlineItalic.woff2") format("woff2"),
+    url("fonts/NegaraSerif-HairlineItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OnceUponaTime";
+  src: url("fonts/OnceUponaTime.woff") format("woff2"),
+    url("fonts/OnceUponaTime.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OnceUponaTime-Bold";
+  src: url("fonts/OnceUponaTime-Bold.woff") format("woff2"),
+    url("fonts/OnceUponaTime-Bold.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
