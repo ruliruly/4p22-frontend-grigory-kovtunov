@@ -33,7 +33,7 @@ body {
   font-size: calc(50 / 1440 * 100vw);
   text-align: center;
   margin: 0;
-
+  margin-top: calc(-5 / 1440 * 100vw);
   color: #787878;
 }
 .box-form__form {
@@ -58,7 +58,7 @@ body {
 
 .box-form__input {
   position: absolute;
-  top: calc(114 / 1440 * 100vw);
+  top: calc(112 / 1440 * 100vw);
   width: calc(510 / 1440 * 100vw);
   height: calc(49 / 1440 * 100vw);
   background: #ffffff;
