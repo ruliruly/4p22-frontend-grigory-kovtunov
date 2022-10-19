@@ -1,17 +1,13 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: Roboto;
   background: #1b2473;
 }
-.main {
-  max-width: 600px;
-  max-height: 412px;
-  width: 100%;
-  height: 100%;
-}
+
 .box-form {
   position: relative;
   width: calc(600 / 1440 * 100vw);
@@ -27,60 +23,53 @@ body {
   box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
+
 .box-form__h1 {
+  margin: 0;
+
   font-style: normal;
   font-weight: 700;
   font-size: calc(50 / 1440 * 100vw);
   text-align: center;
-  margin: 0;
-  margin-top: calc(-5 / 1440 * 100vw);
   color: #787878;
 }
+
 .box-form__form {
+  position: relative;
   display: flex;
   flex-direction: column;
+  height: 92%;
 }
 .box-form__label {
-  position: absolute;
-  top: calc(93 / 1440 * 100vw);
-  left: calc(52 / 1440 * 100vw);
-  font-style: normal;
+  margin-left: calc(7 / 1440 * 100vw);
+
   font-weight: 700;
   font-size: calc(16 / 1440 * 100vw);
   line-height: calc(16 / 1440 * 100vw);
-
   color: #787878;
-}
-.box-form__label_short {
-  position: absolute;
-  top: calc(173 / 1440 * 100vw);
 }
 
 .box-form__input {
-  position: absolute;
-  top: calc(112 / 1440 * 100vw);
-  width: calc(510 / 1440 * 100vw);
+  width: 100%;
   height: calc(49 / 1440 * 100vw);
-  background: #ffffff;
+  margin-bottom: calc(13 / 1440 * 100vw);
+  padding-left: calc(13 / 1440 * 100vw);
+
   border: 2px solid #787878;
   border-radius: calc(10 / 1440 * 100vw);
-  padding-left: calc(13 / 1440 * 100vw);
-  padding-top: calc(0 / 1440 * 100vw);
+  background: #ffffff;
 
   font-weight: 700;
   font-size: calc(28 / 1440 * 100vw);
   line-height: calc(36 / 1440 * 100vw);
   color: #787878;
 }
+
 .box-form__input:focus {
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  outline: none;
 }
-.box-form__input_short {
-  position: absolute;
-  top: calc(194 / 1440 * 100vw);
-  border-radius: calc(10 / 1440 * 100vw);
-  padding-left: calc(11 / 1440 * 100vw);
-}
+
 .box-form__input::placeholder {
   font-weight: 700;
   font-size: calc(28 / 1440 * 100vw);
@@ -88,7 +77,7 @@ body {
   color: #cccccc;
 }
 
-/* чекбокс */
+/* checkbox */
 
 .box-form__hidden-checkbox {
   position: absolute;
@@ -96,40 +85,39 @@ body {
   height: 0%;
   opacity: 0;
 }
+
 .box-form__label-checkbox {
-  position: absolute;
-  top: calc(261 / 1440 * 100vw);
-  left: calc(56 / 1440 * 100vw);
+  display: inline-block;
+  margin-top: calc(20 / 1440 * 100vw);
+  padding-left: calc(35 / 1440 * 100vw);
   font-style: normal;
   font-weight: 400;
   font-size: calc(14 / 1440 * 100vw);
   line-height: calc(16 / 1440 * 100vw);
-  padding-top: calc(5 / 1440 * 100vw);
-  padding-left: calc(25 / 1440 * 100vw);
-
   color: #787878;
 }
+
 .box-form__label-checkbox::before {
   content: "";
   position: absolute;
+  top: calc(169 / 1440 * 100vw);
+  left: calc(0 / 1440 * 100vw);
   width: calc(21 / 1440 * 100vw);
-  height: calc(10 / 1440 * 100vw);
-  background: #ffffff;
+  height: calc(21 / 1440 * 100vw);
   border: 2px solid #787878;
   border-radius: calc(7 / 1440 * 100vw);
-  left: calc(-10 / 1440 * 100vw);
-  top: 0px;
-  padding-top: calc(9 / 1440 * 100vw);
+  background: #ffffff;
 }
+
 .box-form__label-checkbox::after {
   content: "";
+  position: absolute;
+  left: calc(4 / 1440 * 100vw);
+  top: calc(168 / 1440 * 100vw);
+  width: calc(23 / 1440 * 100vw);
+  height: calc(23 / 1440 * 100vw);
   background: url(img/free.png);
   background-size: 100% 100%;
-  position: absolute;
-  width: calc(24 / 1440 * 100vw);
-  height: calc(25 / 1440 * 100vw);
-  left: calc(-5 / 1440 * 100vw);
-  top: calc(-5 / 1440 * 100vw);
   opacity: 0;
   transition: 2;
 }
@@ -139,99 +127,82 @@ body {
 }
 
 .box-form__button {
-  position: absolute;
-  left: calc(210 / 1440 * 100vw);
-  top: calc(337 / 1440 * 100vw);
   width: calc(180 / 1440 * 100vw);
   height: calc(52 / 1440 * 100vw);
-
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: calc(34 / 1440 * 100vw);
   background: #1a226b;
   border-radius: calc(10 / 1440 * 100vw);
 
   font-weight: 700;
   font-size: calc(24 / 1440 * 100vw);
   line-height: calc(16 / 1440 * 100vw);
-
   color: #ffffff;
 }
+
 .box-form__button:hover {
   background: #212b87;
 }
+
 .box-form__button:active {
   border: 2px solid #aeaeae;
 }
 
-/* 768-320 */
+/* breakpoint 768-320 */
 
 @media screen and (max-width: 769px) {
   .box-form {
-    position: relative;
     width: calc(728 / 768 * 100vw);
     height: calc(697 / 768 * 100vw);
-    margin: calc(20 / 768 * 100vw) calc(20 / 768 * 100vw);
-    padding-top: calc(26 / 768 * 100vw);
-    padding-right: calc(45 / 768 * 100vw);
-    padding-bottom: calc(45 / 768 * 100vw);
-    padding-left: calc(45 / 768 * 100vw);
-
+    margin: 3% 3%;
+    padding: 5.5% 6.5%;
+    padding-right: 6.5%;
+    padding-bottom: 6.5%;
+    padding-left: 6.5%;
     background: #ffffff;
-    box-shadow: calc(0 / 768 * 100vw) calc(0 / 768 * 100vw)
-      calc(40 / 768 * 100vw) calc(10 / 768 * 100vw) rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 calc(40 / 768 * 100vw) calc(10 / 768 * 100vw)
+      rgba(0, 0, 0, 0.25);
     border-radius: calc(20 / 768 * 100vw);
   }
+
   .box-form__h1 {
     font-style: normal;
     font-weight: 700;
     font-size: calc(60 / 768 * 100vw);
     line-height: calc(50 / 768 * 100vw);
     text-align: center;
-    margin: calc(11 / 768 * 100vw) auto auto auto;
-
     color: #787878;
   }
 
   .box-form__form {
+    height: 92%;
     display: flex;
     flex-direction: column;
   }
+
   .box-form__label {
-    position: absolute;
-    top: calc(102 / 768 * 100vw);
-    left: calc(52 / 768 * 100vw);
-    font-style: normal;
+    margin: 0.8% 0.7%;
     font-weight: 700;
     font-size: calc(24 / 768 * 100vw);
     line-height: calc(16 / 768 * 100vw);
-
     color: #787878;
-  }
-  .box-form__label_short {
-    position: absolute;
-    top: calc(186 / 768 * 100vw);
   }
 
   .box-form__input {
-    position: absolute;
-    top: calc(124 / 768 * 100vw);
-    width: calc(638 / 768 * 100vw);
+    width: 100%;
     height: calc(49 / 768 * 100vw);
-    background: #ffffff;
+    padding-left: 1.8%;
     border: calc(2 / 768 * 100vw) solid #787878;
     border-radius: calc(10 / 768 * 100vw);
-    padding-left: calc(13 / 768 * 100vw);
-    padding-top: calc(0 / 768 * 100vw);
+    background: #ffffff;
 
     font-weight: 700;
     font-size: calc(28 / 768 * 100vw);
     line-height: calc(36 / 768 * 100vw);
     color: #787878;
   }
-  .box-form__input_short {
-    position: absolute;
-    top: calc(211 / 768 * 100vw);
-    border-radius: calc(10 / 768 * 100vw);
-    padding-left: calc(11 / 768 * 100vw);
-  }
+
   .box-form__input::placeholder {
     font-weight: 700;
     font-size: calc(28 / 768 * 100vw);
@@ -242,46 +213,44 @@ body {
   /* чекбокс */
 
   .box-form__hidden-checkbox {
-    position: absolute;
     width: 0%;
     height: 0%;
     opacity: 0;
   }
+
   .box-form__label-checkbox {
-    position: absolute;
-    width: calc(390 / 768 * 100vw);
+    width: 100%;
     height: calc(16 / 768 * 100vw);
-    top: calc(280 / 768 * 100vw);
-    left: calc(56 / 768 * 100vw);
+    padding-top: 4%;
+    padding-left: 6%;
+
     font-style: normal;
     font-weight: 400;
     font-size: calc(18 / 768 * 100vw);
     line-height: calc(16 / 768 * 100vw);
-    padding-top: calc(5 / 768 * 100vw);
-    padding-left: calc(32 / 768 * 100vw);
-
     color: #787878;
   }
+
   .box-form__label-checkbox::before {
     content: "";
     position: absolute;
+    top: calc(347 / 1440 * 100vw);
     width: calc(28 / 768 * 100vw);
-    height: calc(18 / 768 * 100vw);
-    background: #ffffff;
+    height: calc(28 / 768 * 100vw);
     border: calc(2 / 768 * 100vw) solid #787878;
     border-radius: calc(7 / 768 * 100vw);
-    left: calc(-10 / 768 * 100vw);
-    padding-top: calc(9 / 768 * 100vw);
+    background: #ffffff;
   }
+
   .box-form__label-checkbox::after {
     content: "";
-    background: url(img/free.png);
-    background-size: 100% 100%;
     position: absolute;
+    left: calc(3 / 768 * 100vw);
+    top: calc(180 / 768 * 100vw);
     width: calc(29 / 768 * 100vw);
     height: calc(31 / 768 * 100vw);
-    left: calc(-5 / 768 * 100vw);
-    top: calc(-5 / 768 * 100vw);
+    background: url(img/free.png);
+    background-size: 100% 100%;
     opacity: 0;
     transition: 2;
   }
@@ -291,19 +260,15 @@ body {
   }
 
   .box-form__button {
-    position: absolute;
-    left: calc(255 / 768 * 100vw);
-    top: calc(373 / 768 * 100vw);
     width: calc(220 / 768 * 100vw);
     height: calc(80 / 768 * 100vw);
-
-    background: #1a226b;
+    margin-top: 12.5%;
     border-radius: calc(10 / 768 * 100vw);
+    background: #1a226b;
 
     font-weight: 700;
     font-size: calc(32 / 768 * 100vw);
     line-height: calc(16 / 768 * 100vw);
-
     color: #ffffff;
   }
 }
