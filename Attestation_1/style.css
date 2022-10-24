@@ -63,7 +63,7 @@ body {
   transition: 0.2s;
 }
 
-/* ---------------------------------------card_1440-------- */
+/* ---------------------------------------input-------- */
 .box-form {
   position: relative;
   width: 600px;
@@ -210,7 +210,7 @@ body {
     justify-content: center;
     min-width: 320px;
   }
-  
+
   .box-form {
     margin: calc(80 / 768 * 100vw) 20px;
   }
@@ -319,7 +319,7 @@ body {
   content: "";
   opacity: 0;
   position: absolute;
-  left: 6px;
+  left: 8.2px;
   width: 12px;
   height: 12px;
   background: #787878;
