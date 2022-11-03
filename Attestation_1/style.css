@@ -355,4 +355,9 @@ body {
   .box-form__form {
     margin: 0;
   }
+
+.box-form__buttom{
+  heihgt:30px;
+  margin-top:20px;
+}  
 }
