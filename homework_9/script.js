@@ -1,38 +1,29 @@
 
 
-'use strict'
+'use strict'  
 
+function makeFibonacciFunction() {
+    let firstNumber = 0;
+    let secondNumber= 1;
+    let result;
 
-//Необходимо реализовать функцию, которая при каждом вызове будет выводить следующее число Фибоначчи
-//  *Созвёздочкой -  Реализовать задание только с одной объявленной в глобальном контексте функцией.
-//   Требования . 
-// В скрипте не должно выть глобальных переменных. 
-// Допускается наличие максимум двух объявленных функций в глобальном
-// контексте (основная - fibonacci, и функция-помощник). Для задания со
-// звёздочкой – максимум одна объявленная функция в глобальном контексте.
-// Внутри функции может быть создано любое количество переменных и функций. 
-// Функции не должны принимать на вход аргументы
+    return function() {
+        result = firstNumber + secondNumber;
+        console.log(secondNumber);
+        firstNumber = secondNumber;
+        secondNumber = result;
+    };
+};
 
-//Пример 
+const fibonacci = makeFibonacciFunction();
 
-    function makeFibonacciFunction() { 
-                                           
+fibonacci();
+fibonacci();
+fibonacci();
+fibonacci();
+fibonacci();
+fibonacci();
+fibonacci();
+fibonacci();
+fibonacci();
 
-    }
-    const fibonacci = makeFibonacciFunction();
-
-    fibonacci(); // Вывод в консоль: 1
-    fibonacci(); // Вывод в консоль: 2
-    fibonacci(); // Вывод в консоль: 3
-    fibonacci(); // Вывод в консоль: 4
-    fibonacci(); // Вывод в консоль: 5
-
-    // Со звёздочкой
-
-    const fibonacci = // some magic...
-    
-    fibonacci(); // Вывод в консоль: 1
-    fibonacci(); // Вывод в консоль: 2
-    fibonacci(); // Вывод в консоль: 3
-    fibonacci(); // Вывод в консоль: 4
-    fibonacci(); // Вывод в консоль: 5
